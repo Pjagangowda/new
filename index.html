@@ -1,0 +1,5 @@
+FROM httpd -y
+COPY . /var/www/html/
+RUN yum update
+CMD["echo", "hello world"]
+
